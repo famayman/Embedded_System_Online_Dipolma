@@ -1,1 +1,1 @@
-# Embedde_System_Online_Dipolma
+# Embedded_System_Online_Dipolma
