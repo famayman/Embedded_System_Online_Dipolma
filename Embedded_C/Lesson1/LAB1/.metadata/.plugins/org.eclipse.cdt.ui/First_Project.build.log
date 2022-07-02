@@ -1,0 +1,23 @@
+06:07:09 **** Incremental Build of configuration Debug for project First_Project ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "First_Project.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Fam Ayman\STM32CubeIDE\workspace_1.4.0\First_Project\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="First_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: First_Project.elf
+ 
+arm-none-eabi-objdump -h -S  First_Project.elf  > "First_Project.list"
+arm-none-eabi-objcopy  -O ihex  First_Project.elf  "First_Project.hex"
+arm-none-eabi-objcopy  -O binary  First_Project.elf  "First_Project.bin"
+arm-none-eabi-size   First_Project.elf 
+Finished building: First_Project.hex
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	First_Project.elf
+Finished building: First_Project.bin
+Finished building: default.size.stdout
+ 
+ 
+ 
+Finished building: First_Project.list
+ 
+
+06:07:28 Build Finished. 0 errors, 0 warnings. (took 18s.630ms)
+
