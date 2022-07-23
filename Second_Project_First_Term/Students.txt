@@ -1,0 +1,4 @@
+1 Fam Ayman 3.5 1 2 3 4 5
+2 Pavly Salah 3 80 12 38 29 63
+3 Bolis Karam 3.5 45 21 55 18 46
+4 Kerolos Gamal 3.5 45 21 55 18 46
