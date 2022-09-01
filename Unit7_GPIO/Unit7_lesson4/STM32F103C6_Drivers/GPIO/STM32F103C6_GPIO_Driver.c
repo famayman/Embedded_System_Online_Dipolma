@@ -62,11 +62,14 @@ void MCAL_GPIO_Init (S_GPIO_t * GPIOx , GPIO_Pin_Config_t * P_Config)
 	//if Pin is INPUT
 	else
 	{
-		if(P_Config->GPIO_Mode == GPIO_Mode_Analog || P_Config->GPIO_Mode == GPIO_Mode_Input_FLO
-				|| P_Config->GPIO_Mode == GPIO_Mode_AF_Input)
+		if(P_Config->GPIO_Mode == GPIO_Mode_Analog || P_Config->GPIO_Mode == GPIO_Mode_Input_FLO)
 		{
 			PIN_Config = ((((P_Config->GPIO_Mode)<<2) | (0x0)) & 0x0f);
 
+		}
+		else if (P_Config->GPIO_Mode ==GPIO_Mode_AF_Input)
+		{
+			PIN_Config = ((((GPIO_Mode_Input_FLO)<<2) | (0x0)) & 0x0f);
 		}
 		else
 		{
