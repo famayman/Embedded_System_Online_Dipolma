@@ -1,8 +1,0 @@
-../Core/Src/main.c:60:6:Can_Tx	56	static
-../Core/Src/main.c:94:5:main	32	static
-../Core/Src/main.c:144:6:CAN_RX_Filter_Init	56	static
-../Core/Src/main.c:169:6:CAN_RX	56	static
-../Core/Src/main.c:191:6:SystemClock_Config	72	static
-../Core/Src/main.c:228:13:MX_CAN_Init	8	static
-../Core/Src/main.c:266:13:MX_GPIO_Init	16	static
-../Core/Src/main.c:282:6:Error_Handler	4	static,ignoring_inline_asm
