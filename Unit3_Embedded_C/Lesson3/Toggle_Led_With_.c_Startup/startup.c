@@ -39,7 +39,7 @@ void Reset_Handler(void)
    for(i=0;i<Data_size;i++)
      {*((unsigned char*)P_dis++) = *((unsigned char*)P_src++);}
    uint32_t bss_size=(unsigned char*)&E_bss-(unsigned char*)&S_bss;
-   for(i=0;i<Data_size;i++)
+   for(i=0;i<bss_size;i++)
      {*((unsigned char*)P_dis++) = (unsigned char)0;}
     main(); 
 }
